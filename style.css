@@ -1,0 +1,40 @@
+.burguer-icon{
+    height: 14px;
+    width: 20px;
+    margin: 50px auto;
+    position: relative;
+    /* background-color: red; */
+}
+.burguer-icon span{
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease;
+}
+.burguer-icon span:first-child{
+    top: 0;
+}
+.burguer-icon span:nth-child(2){
+    top: 6px;
+}
+.burguer-icon span:last-child{
+    top: 12px;
+}
+.burguer-icon:hover span:nth-child(2){
+    opacity: 0;
+}
+.burguer-icon:hover span:first-child,
+.burguer-icon:hover span:last-child{
+    top: 6px;
+}
+.burguer-icon:hover span:first-child{
+    transform: rotate(45deg);
+    background-color: crimson;
+}
+.burguer-icon:hover span:last-child{
+    transform: rotate(-45deg);
+    background-color: crimson;
+}
